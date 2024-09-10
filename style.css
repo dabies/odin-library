@@ -1,0 +1,109 @@
+.grid {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 9fr;
+    height: 100vh;
+}
+
+.header {
+    grid-area: 1 / 1 / 2 / -1;
+    background-color: gray;
+    display: grid;
+    place-content: center; 
+}
+
+.header p {
+    font-size: 2.5rem;
+    color: antiquewhite;
+}
+
+#library {
+    background-image: url(/images/libraryShelvesBg.jpg);
+    background-size: contain;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 10px;
+    padding: 15px;
+}
+
+.sidebar {
+    background-image: url(/images/libraryBg.jpg);
+    display: inline-block;
+    font-size: 2rem;
+    color: antiquewhite;
+}
+
+.sidebar button,
+.sidebar input[type='text'] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.sidebar button {
+    width: 80%;
+    margin-left: 10%;
+    font-size: 1.5rem;
+}
+
+.sidebar button:hover {
+    background-color: lightgray;
+}
+
+button:active {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, 
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+.sidebar input[type='number'] {
+    width: 150px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: 1.5rem;
+}
+
+.sidebar #stars {
+    width: 100px;
+}
+
+input[type='checkbox'] {
+    width:15px;
+    height:15px;
+    background:white;
+    border-radius:10px;
+    border:2px solid #555;
+}
+
+.sidebar input[type='checkbox'] {
+    width: 25px;
+    height: 25px;
+}
+
+#library div {
+    background-color: rgb(121, 92, 72);
+    border: 1px solid lightblue;
+    border-radius: 10px;
+    height: 200px;
+    padding: 5px;
+}
+
+#library button {
+    position: relative;
+    left: 230px;
+    padding: 5px;
+    background-color: burlywood;
+    outline: 0;
+    border-radius: 5px;
+}
+
+#library button:hover{
+    background-color: rgb(221, 196, 163);
+}

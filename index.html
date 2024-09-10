@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="library.js" defer></script>
+</head>
+<div class="grid">
+    <header class="header">
+        <p>My Library</p>
+    </header>
+    <div id="library">
+        <div class="0">
+            <p class="title">Title: The Subtle Art of Not Giving a F*ck</p>
+            <p class="author">Author: Mark Manson</p>
+            <p class="pages">Pages: 224</p>
+            <p class="stars">Stars: 5</p>
+            <label for="read">Read?</label>
+            <input type="checkbox" name="read" id="read" checked>
+            <button class="remove">Remove</button>
+        </div>
+    </div>
+    <div class="sidebar">
+        <form action="" id="bookForm">
+            <fieldset>
+                <label for="newTitle">Title: </label>
+                <input type="text" id="newTitle" required>
+            </fieldset>
+            <fieldset>
+                <label for="newAuthor">Author: </label>
+                <input type="text" id="newAuthor" required>
+            </fieldset>
+            <fieldset>
+                <label for="newPages">Pages: </label>
+                <input type="number" id="newPages" min="1" max="100000" required>
+            </fieldset>
+            <fieldset>
+                <label for="newStars">Stars: </label>
+                <input type="number" id="newStars" min="1" max="5" required>
+            </fieldset>
+            <fieldset>
+                <label for="newRead">Read? </label>
+                <input type="checkbox" id="newRead">
+            </fieldset>
+            <button type="submit">Add Book</button>
+        </form>
+    </div>
+</div>
+<body>
+    
+</body>
+</html>
