@@ -1,12 +1,14 @@
 const myLibrary = [];
 const libraryGrid = document.getElementById('library');
 
-function Book(title, author, pages, stars, read) {
-  this.title = title,
-  this.author = author,
-  this.pages = pages,
-  this.stars = stars,
-  this.read = read
+class Book {
+    constructor(title, author, pages, stars, read) {
+        this.title = title,
+        this.author = author,
+        this.pages = pages,
+        this.stars = stars,
+        this.read = read
+    }
 }
 
 function addBookToLibrary(book) {
